@@ -1,4 +1,4 @@
-# Game
+# Learning Project
 Personal Project made to learn.
 
 Developers:
@@ -6,5 +6,20 @@ Developers:
 
 To add docker, follow this commands:
 
-docker build -t ubuntu-custom .
-docker run -it ubuntu-custom
+```console
+git clone git@github.com:ifuaslaerl/LearningProject.git
+cd LearningProject
+docker build -t dev-container .
+docker run -it --name dev-container -v $(pwd):/workspace dev-container
+```
+
+Attach to container in workspace
+
+```console
+conda env create -f env.yml
+conda init
+source ../opt/miniconda/bin/activate
+conda activate PYTHON
+git config --global --ad safe.directory /workspace
+```
+

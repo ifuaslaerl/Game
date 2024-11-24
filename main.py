@@ -1,4 +1,4 @@
-""" Module providing menu """
+""" Module providing main """
 
 from src.main_menu import MainMenu
 
