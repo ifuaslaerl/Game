@@ -1,7 +1,7 @@
 """ Module providing Main Menu. """
 
 from src.menu import SelectionMenu
-from src.hanoi_menu import HanoiMenu
+from src.game_menus import HanoiMenu, PacmanMenu, RoberyMenu
 
 # Constants
 SCREEN_SIZE = (1000, 500)
