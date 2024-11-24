@@ -13,7 +13,7 @@ docker build -t dev-container .
 docker run -it --name dev-container -v $(pwd):/workspace dev-container
 ```
 
-Attach to container in workspace
+Attach to container in /workspace
 
 ```console
 conda env create -f env.yml
@@ -23,3 +23,18 @@ conda activate PYTHON
 git config --global --ad safe.directory /workspace
 ```
 
+Recomended to download this extentions in VsCode:
+
+- GitLens — Git supercharged
+- gitignore
+- Path Intellisense
+- Prettier - Code formatter
+- indent-rainbow
+- Python
+- isort
+- Pylint
+- autoDocstring - Python Docstring Generator
+- C/C++
+- C/C++ Extension Pack
+- C/C++ Runner
+- Rainbow CSV
